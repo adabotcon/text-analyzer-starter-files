@@ -12,7 +12,7 @@
         <main>
             <h1>Text analzyer</h1>
             <p>Paste in text below, submit, and get some basic stats back.</p>
-            <form>
+            <form class="js-text-form">
                 <div>
                     <label for="user-text">Text to analyze</label>
                     <textarea cols="60" rows="20" id="user-text" name="user-text" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." required></textarea>
@@ -22,23 +22,23 @@
                 </div>
             </form>
 
-            <dl class="hidden text-report">
-                <dt>Word count</dt>
-                <dd></dd>
+            <dl class="hidden text-report js-text-report">
+                <dt class="js-result-label">Word count</dt>
+                <dd class="js-word-count"></dd>
 
-                <dt>Unique word count</dt>
-                <dd></dd>
+                <dt class="js-result-label">Unique word count</dt>
+                <dd class="js-unique-word-count"></dd>
 
-                <dt>Average word length</dt>
-                <dd></dd>
+                <dt class="js-result-label">Average word length</dt>
+                <dd class="js-average-word-length"></dd>
 
-                <dt>Average sentence length</dt>
-                <dd></dd>
+                <dt class="js-result-label">Average sentence length</dt>
+                <dd class="js-average-sentence-length"></dd>
             </dl>
         </main>
     </div>
 
-    <!-- link to jquery -->
-    <!-- link to your app.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
